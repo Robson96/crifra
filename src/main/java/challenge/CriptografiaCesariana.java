@@ -7,6 +7,8 @@ public class CriptografiaCesariana implements Criptografia {
         //se for nulo ele ja lançca a NUllPionter
         if (texto.isEmpty())
             throw new IllegalArgumentException();
+        if (texto == null)
+            throw new NullPointerException();
 
         StringBuilder builder = new StringBuilder();
 
@@ -26,6 +28,8 @@ public class CriptografiaCesariana implements Criptografia {
         //se for nulo ele ja lançca a NUllPionter
         if (texto.isEmpty())
             throw new IllegalArgumentException();
+        if (texto == null)
+            throw new NullPointerException();
 
         StringBuilder builder = new StringBuilder();
 

@@ -20,6 +20,9 @@ public class CriptografiaCesarianaTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void deveRetornarErroQuandoOCriptografaTextoEhVazio() {
+        String texto = TEXTO_DESCRIPTOGRAFADO;
+        System.out.println(texto);
+        System.out.println(criptografia.descriptografar(TEXTO_CRIPTOGRAFADO));
         criptografia.criptografar("");
     }
 
@@ -41,6 +44,8 @@ public class CriptografiaCesarianaTest {
     @Test
     public void deveCriptografarTexto() {
         String texto = TEXTO_DESCRIPTOGRAFADO;
+        System.out.println(texto);
+        System.out.println(criptografia.criptografar(texto));
         assertEquals(TEXTO_CRIPTOGRAFADO, criptografia.criptografar(texto));
     }
 
